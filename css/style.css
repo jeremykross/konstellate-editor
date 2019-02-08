@@ -24,6 +24,10 @@ body * {
   padding: 0;
 }
 
+input[type=checkbox] {
+  visibility: hidden;
+}
+
 .button {
   min-width: 128px;
   line-height: 40px;
@@ -184,14 +188,14 @@ body * {
 }
 
 .key-picker {
-  right: 0;
-  top: 0;
-  position: fixed;
   animation: FadeInAnim 300ms ease;
-  z-index: 2;
-  font-size: 14px;
   bottom: 0;
+  font-size: 14px;
+  top: 0;
   background: white;
+  z-index: 2;
+  right: 0;
+  position: fixed;
   left: 0;
 }
 
@@ -216,6 +220,7 @@ body * {
   bottom: -64px;
   right: 64px;
   transition: bottom 300ms ease;
+  z-index: 2;
 }
 
 .key-picker .button.show {
@@ -250,6 +255,8 @@ body * {
 
 .key-picker .content h4 {
   margin-top: 16px;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .key-picker .properties {
